@@ -9,9 +9,10 @@ int* ptr =&a;
 int** parentPtr = & ptr;
     
 
-    cout<< &ptr << endl;
-    cout<< &parentPtr << endl;
-
+    cout<< *(&a) << endl;
+     cout<< *(ptr) << endl;
+     
+     cout<< (ptr) << endl;
     return 0;
 
 }
