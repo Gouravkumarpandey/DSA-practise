@@ -3,11 +3,14 @@
 using namespace std;
 
 int main (){
-    float price = 100.25;
-    float*ptr = &price;
+int a= 10;
+int* ptr =&a;
 
-    cout<< ptr<< endl;
-    cout<< &price << endl;
+int** parentPtr = & ptr;
+    
+
+    cout<< &ptr << endl;
+    cout<< &parentPtr << endl;
 
     return 0;
 
