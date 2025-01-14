@@ -1,24 +1,21 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-int main (){
-    int n ;
+int main() {
+    int n;
     long factorial = 1.0;
-cout<<"enter the number :";
-cin >> n;
-if(n<0)
-cout<< "erorr factorial numbers:";
-{
 
-else{
-    for(int i=1;i<=n;i++){
-    factorial *=i;
+    cout << "Enter a positive integer: ";
+    cin >> n;
+
+    if (n < 0)
+        cout << "Error! Factorial of a negative number doesn't exist.";
+    else {
+        for(int i = 1; i <= n; ++i) {
+            factorial *= i;
+        }
+        cout << "Factorial of " << n << " = " << factorial;    
     }
-    cout<< "factorial of "<< n << " = " << factorial;
+
     return 0;
-}
-}
-
-
-
 }
