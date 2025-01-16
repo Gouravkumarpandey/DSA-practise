@@ -6,7 +6,9 @@ int main (){
 int n ;
 cin >> n;
 cout<< "enter the value of n ";
-for(int)
+for(int i =0;i<n;i++){
+    
+}
 
   
 }
