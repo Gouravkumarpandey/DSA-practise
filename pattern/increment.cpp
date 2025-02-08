@@ -1,10 +1,10 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-    void slant_num(int n){
-        for(int i =1;i<n ;i++){
+    void increment(int n){
+        for(int i =1;i<=n ;i++){
             for(int j=1;j<=i;j++){
-                cout<<j<<" ";
+                cout<<i<<" ";
 
             }
 
@@ -14,7 +14,7 @@ using namespace std;
         }
             int main (){
                 int n =6;
-                slant_num(n);
+                increment(n);
                 return 0;
         
             }
