@@ -13,6 +13,8 @@ int main (){
 
     cout<< p<< endl;
     cout<< *q<< endl;
+    cout<< &a << endl;
+
 return 0;
 
 }
