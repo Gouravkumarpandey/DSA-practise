@@ -1,20 +1,17 @@
 #include<iostream>
-#include <vector>
+#include<vector>
 
-using namespace std;
+ using namespace std;
 
-int main (){
-    int a = 5;
-    int*p = &a;
-    int **q = &p;
+ void changeA(int a){
+    a =20;
+ }
 
-    cout<< *p<< endl;
-    cout<< **q<< endl;
+ int main (){
+    int a = 10;
+    changeA (a);
 
-    cout<< p<< endl;
-    cout<< *q<< endl;
-    cout<< &a << endl;
-
-return 0;
-
-}
+    cout<< "inside main fnx" << a << endl;
+    return 0;
+    
+ }
