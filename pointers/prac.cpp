@@ -3,15 +3,15 @@
 
  using namespace std;
 
- void changeA(int a){
+ void changeA(int* ptr){ // pass by val
     a =20;
  }
 
  int main (){
     int a = 10;
-    changeA (a);
+    changeA (&a);
 
-    cout<< "inside main fnx" << a << endl;
+    cout<< "inside main fnx : " << a << endl;
     return 0;
-    
+
  }
