@@ -1,21 +1,17 @@
 #include<iostream>
 using namespace std;
 
-
-int sum(int n){
-    if(n==1){
-        return 1;
+int fibonaci(int n){
+    if (n==1||n==0){
+        return n;
     }
-   
-    
 
-    return n+ sum (n-1);
+    return fibonaci(n-1)+fibonaci(n-2);
 }
+
 int main(){
-    int n ;
-    cout<<"enter the value of n"<<endl;
-    cin>>n;
     
-    cout<<sum(n)<<endl;
+    cout<< fibonaci(5)<<endl;
     return 0;
+
 }
